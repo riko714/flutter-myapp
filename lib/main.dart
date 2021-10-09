@@ -14,23 +14,16 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.red,
       ),
-      body: const Center(
-        child: Text(
-          'Hard Start !!!',
-          style: TextStyle(
-            fontSize: 20.0,
-            fontWeight: FontWeight.bold,
-            letterSpacing: 2.0,
-            color: Colors.grey,
-            fontFamily: 'IndieFlower',
-          ),
-        ),
+      body: Center(
+        // child: Image(image: AssetImage('assets/photo03.jpg')),
+        // child: Image.asset('assets/photo01.jpg'),
+        child: Image.network(
+            'https://images.unsplash.com/photo-1504387103978-e4ee71416c38?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80'),
       ),
       floatingActionButton: FloatingActionButton(
         child: const Text('Click me!'),
         onPressed: () => {},
         backgroundColor: Colors.red,
       ),
-    );
   }
 }

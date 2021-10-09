@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_print
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,16 +16,15 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.red,
       ),
-      body: Center(
-        // child: Image(image: AssetImage('assets/photo03.jpg')),
-        // child: Image.asset('assets/photo01.jpg'),
-        child: Image.network(
-            'https://images.unsplash.com/photo-1504387103978-e4ee71416c38?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80'),
+      body: Padding(
+        child: Text('Hello Padding'),
+        padding: EdgeInsets.all(90.0),
       ),
       floatingActionButton: FloatingActionButton(
         child: const Text('Click me!'),
         onPressed: () => {},
         backgroundColor: Colors.red,
       ),
+    );
   }
 }
